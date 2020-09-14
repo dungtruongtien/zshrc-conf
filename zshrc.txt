@@ -100,12 +100,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias startKafka="bin/kafka-server-start.sh config/server.properties"
-alias startZookeeper="bin/zkServer.sh start"
-alias kafkaTopics="bin/kafka-topics.sh --list --bootstrap-server localhost:9092"
-alias kafkaConnector="bin/connect-standalone.sh config/connect-standalone.properties config/connect-file-source.properties config/connect-file-sink.properties"
+
+
 alias cls="clear"
 alias workspace="code /home/savemoney/workspace"
+alias ssh-key-login='function _ssh-key-login(){ ssh -i /Users/tiendung/.ssh/kompa_uat_server $1; };_ssh-key-login'
+alias gedit='function _gedit(){ open -a TextEdit $1; };_gedit'
 
 vscode(){
  code $(pwd)
